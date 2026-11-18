@@ -1,0 +1,28 @@
+{
+  "entry_path": "/portal",
+  "media": "text/html; charset=utf-8",
+  "routes": [
+    {
+      "path": "/portal",
+      "method": "GET",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Set-Cookie": "session=demo; Path=/"
+      },
+      "body": "<html><form action=\"/portal\" method=\"post\"><input name=\"__VIEWSTATE\" value=\"state-east-1\"><input name=\"__EVENTVALIDATION\" value=\"ev1\"><select name=\"district\"><option value=\"east\" selected>东区</option></select><select name=\"service\"><option value=\"change\" selected>企业变更</option></select><input name=\"catalogRevision\" value=\"r1\"><table><tr data-result-id=\"a1\"><td>东厅</td><td>2026-11-20</td></tr></table></form></html>"
+    },
+    {
+      "path": "/portal",
+      "method": "POST",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "body": "<html><form action=\"/portal\" method=\"post\"><input name=\"__VIEWSTATE\" value=\"state-east-1\"><input name=\"__EVENTVALIDATION\" value=\"ev1\"><select name=\"district\"><option value=\"east\" selected>东区</option></select><select name=\"service\"><option value=\"change\" selected>企业变更</option></select><input name=\"catalogRevision\" value=\"r1\"><table><tr data-result-id=\"a1\"><td>东厅</td><td>2026-11-20</td></tr></table></form></html>",
+      "require_headers": {
+        "Cookie": "session=demo"
+      }
+    }
+  ]
+}
